@@ -11,30 +11,6 @@
             box-sizing: border-box;
         }
 		
-<script type="module">
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-  import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
-
-  const firebaseConfig = {
-    apiKey: "AIzaSyChEs5UGX9GDD03kbe3dbwjoy_hFuQzg",
-    authDomain: "test4uk-21122.firebaseapp.com",
-    databaseURL: "https://test4uk-21122-default-rtdb.europe-west1.firebasedatabase.app",
-    projectId: "test4uk-21122",
-    storageBucket: "test4uk-21122.firebasestorage.app",
-    messagingSenderId: "918110420459",
-    appId: "1:918110420459:web:07ee44d5acd9a1c4692dae"
-  };
-
-  const app = initializeApp(firebaseConfig);
-  const db = getDatabase(app);
-
-  set(ref(db, 'hello'), {
-    text: "Работает!",
-    time: Date.now()
-  });
-</script>
-
-
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -1004,5 +980,27 @@
             document.getElementById('startScreen').style.display = 'block';
         }
     </script>
+	<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+  import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyChEs5UGX9GDD03kbe3dbwjoy_hFuQzg",
+    authDomain: "test4uk-21122.firebaseapp.com",
+    databaseURL: "https://test4uk-21122-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "test4uk-21122",
+    storageBucket: "test4uk-21122.firebasestorage.app",
+    messagingSenderId: "918110420459",
+    appId: "1:918110420459:web:07ee44d5acd9a1c4692dae"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const db = getDatabase(app);
+
+  set(ref(db, 'hello'), {
+    text: "Работает!",
+    time: Date.now()
+  });
+</script>
 </body>
 </html>
